@@ -263,9 +263,7 @@ class FeatureBar extends React.Component {
 
 class Login extends React.Component {
 
-  render() { return (
-    )
-  }
+ 
 }
 
 class Header extends React.Component {
