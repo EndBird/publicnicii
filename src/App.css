@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 .App-logo {
@@ -28,6 +31,265 @@
   color: #61dafb;
 }
 
+.Features {
+  background-color: lightgreen;
+  border: none;
+  margin: 5px;
+}
+
+#Header {
+  display: block;
+  text-align: left;
+  margin-left: 10%;
+}
+
+#Header #firebaseui-auth-container {
+  display: inline-block;
+  width: 30%;
+  margin-left: 150px;
+}
+.mdl-card.mdl-shadow--2dp.firebaseui-container.firebaseui-id-page-sign-in {
+  display: inline-block;
+ 
+  height: 50%;
+}
+
+.firebaseui-card-header {
+  font-size: 5px;
+  display: none;
+}
+
+.firebaseui-card-content {
+  display: inline-block;
+  font-size: 8px;
+
+}
+
+.firebaseui-relative-wrapper {
+  display: inline-block;
+}
+.mdl-textfield__input.firebaseui-input.firebaseui-id-email {
+  width: 50%;
+}
+
+.firebaseui-textfield.mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.is-upgraded {
+  display: inline;
+}
+.firebaseui-card-actions {
+  display: none;
+
+}
+#Server {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  left: 10%;
+  display: inline-block;
+}
+
+#Server nav  {
+  
+  font-size: 12px;
+
+}
+
+#Server nav div form{
+  display: inline-block;
+}
+
+#Server nav div {
+  display: inline-block;
+  border-color: aqua;
+   border-style: solid;
+   margin-left: 5px;
+   margin-bottom: 5px;
+}
+#Server .Post {
+  text-align: left;
+  border-style: solid;
+  border-color: purple;
+  
+}
+#Server .Post #UserProfile_Post {
+  display: inline-block;
+  margin-bottom: 0px;
+}
+
+#Server .Post #UserProfile_Post button {
+ background-color: transparent;
+ 
+ padding: 0px;
+ border-style: none;
+}
+#Server .Post #UserProfile_Post h1 {
+  display: inline;
+  font-size: 11px;
+}
+
+#Server .Post #UserProfile_Post span {
+  display: inline;
+  font-size: 11px;
+  border-style: solid;
+  border-color: lightgrey;
+  margin-right: 3px;
+  background-color: lightblue;
+}
+
+#Server .Post #Message {
+  font-size: 11px;
+  margin-top: 0px;
+}
+#Server .Post #Send {
+  border-style: solid;
+  border-left-style: none;
+  border-color: black;
+
+}
+
+#Server .Post #reply {
+  border-style: solid;
+  border-right-style: none;
+
+
+}
+#Server .Post .Replies {
+  
+position: relative;
+width: 80%;
+height: 50px;
+text-align: right;
+border-top-style: dashed;
+border-color: blue;
+}
+#Server .Post .Replies .Message {
+  font-size: 11px;
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: 1px;
+  width: 90%;
+
+  text-align: left;
+  display: inline-block;
+
+}
+
+
+#ProfileSection {
+  display: none;
+   position: absolute;
+
+  height: 90%;
+  width: 40%;
+   right: 0%;
+}
+.UserProfile {
+  border-collapse: collapse;
+  background-color: skyblue;
+
+  height: 90%;
+  width: 100%;
+   border: 1px solid black;
+ 
+}
+
+.UserProfile tbody {
+  display: block;
+ 
+
+}
+
+.UserProfile tbody tr {
+  display: block;
+ 
+
+}
+
+.UserProfile tbody tr th {
+  display: block;
+  
+}
+.UserProfile tbody tr td {
+  display: block;
+  
+}
+
+.UserProfile .Descriptors {
+  
+ border: 1px solid blue;
+  
+}
+
+.UserProfile tbody tr:not(.Descriptors) {
+  
+ background-color: aqua;
+  
+}
+.UserProfile tbody .UserInfo {
+  text-align: left;
+}
+.UserProfile tbody tr td .Username {
+  display: inline-block;
+}
+
+.UserProfile tbody tr td .UserImg {
+  height: 40px;
+  width: 40px;
+  
+  border-radius: 50%;
+  
+     
+  
+  background-color: purple;
+  position: relative;
+  top: 10px;
+  margin-left: 30px;
+}
+
+.UserProfile tbody .RolesInfo td .roleInfo {
+  background-color: white;
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+
+.UserProfile .RanksInfo .Ranks {
+  list-style-type: none;
+  padding-left: 0px;
+  text-align: left;
+  font-weight: bold;
+   margin-left: 30px;
+}
+.Side {
+  width: 10%;
+  height: 90%;
+  display: inline-block;
+  position: absolute;
+  left:0%;
+}
+
+.NotifyingBar {
+  width: 100%;
+  height: 100%;
+  background-color: darkblue;
+
+ 
+  
+}
+
+.Side .NotifyingBar button {
+  margin-top: 10px;
+  border-radius: 50%;
+  border-top-width: 10px;
+  
+  border-bottom-width: 10px;
+  margin-bottom: 10px;
+
+ 
+
+  
+  
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
