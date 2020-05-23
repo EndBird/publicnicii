@@ -2,56 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import logo from './logo.svg';
 import './App.css';
-import * as firebase from "firebase/app";
-import  "firebase/firestore";
-import * as firebaseui from "firebaseui"
-/*
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Form from 'react-bootstrap/Form';
-import FormControl from 'react-bootstrap/FormControl';
-import Button from 'react-bootstrap/Button';
-*/
 
-var firebaseConfig = { //this MUST be here 
-        apiKey: "AIzaSyALacXRe4dvNAELnNcXRYMuqfyMsGOtNeI",
-        authDomain: "nicii-17c23.firebaseapp.com",
-        databaseURL: "https://nicii-17c23.firebaseio.com",
-        projectId: "nicii-17c23",
-        storageBucket: "nicii-17c23.appspot.com",
-        messagingSenderId: "943355343449",
-        appId: "1:943355343449:web:b6334cfa654d963d30b748"
-      }
-    firebase.initializeApp(firebaseConfig);
-// Initialize the FirebaseUI Widget using Firebase.
-var ui = new firebaseui.auth.AuthUI(firebase.auth());
-ui.start('#firebaseui-auth-container', {
-   callbacks: {
-    signInSuccessWithAuthResult: function(authResult, redirectUrl) {
-      // User successfully signed in.
-      // Return type determines whether we continue the redirect automatically
-      // or whether we leave that to developer to handle.
-      document.getElementById("firebaseui-auth-container").style.display = "none"
-      document.getElementById("Welcome").style.display = "block"
-      setTimeout(300000);
-
-      return false;
-    },
-    uiShown: function() {
-      // The widget is rendered.
-      // Hide the loader.
-      //document.getElementById('loader').style.display = 'none';
-       
-    }
-  },
-  signInSuccessUrl: '/',
-  signInOptions: [
-    firebase.auth.EmailAuthProvider.PROVIDER_ID
-  ],
-  'credentialHelper': firebaseui.auth.CredentialHelper.NONE
-  // Other config options...
-});
 
 
 
@@ -169,18 +120,7 @@ class UserProfile_Post extends React.Component {
   getProfile() {
     document.getElementById('ProfileSection').style.display = "inline-block";
     document.getElementById('Server').style.width = "50%";
-    var db = firebase.firestore();
-db.collection("users").add({
-    first: "Ada",
-    last: "Lovelace",
-    born: 1815
-})
-.then(function(docRef) {
-    console.log("Document written with ID: ", docRef.id);
-})
-.catch(function(error) {
-    console.error("Error adding document: ", error);
-});
+    
   }
   
   render() {
@@ -324,7 +264,7 @@ class FeatureBar extends React.Component {
 class Login extends React.Component {
 
   render() { return (
-    <div id="firebaseui-auth-container"></div>)
+    )
   }
 }
 
@@ -332,7 +272,7 @@ class Header extends React.Component {
 
   render() { 
     return (
-    <div id="Header">Nicii - SERVERS FOR UNIVERSITY STUDENTS AND GAMERS<div id="firebaseui-auth-container"></div></div>
+    <div id="Header">Nicii - SERVERS FOR UNIVERSITY STUDENTS AND GAMERS</div>
 
     )
   }
